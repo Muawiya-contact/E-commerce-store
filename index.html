@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our E-Commerce Store</h1>
+    </header>
+    <main>
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="https://images.priceoye.pk/realme-note-50-pakistan-priceoye-8ashs.jpg" alt="Realme Note 50">
+                <h3>Realme Note 50</h3>
+                <p>$50.00</p>
+                <button onclick="addToCart('Realme Note 50', 50)">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="https://whiteapple.com.pk/wp-content/uploads/2024/04/camon-30-pakistan-priceoye-ws0kt-500x500-1.webp" alt="Camon 30">
+                <h3>Camon 30</h3>
+                <p>$30.00</p>
+                <button onclick="addToCart('Camon 30', 30)">Add to Cart</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="https://media.wisemarket.com.pk/product/infinix-hot-40-pro-54.webp" alt="Infinix Hot 40 Pro">
+                <h3>Infinix Hot 40 Pro</h3>
+                <p>$40.00</p>
+                <button onclick="addToCart('Infinix Hot 40 Pro', 40)">Add to Cart</button>
+            </div>
+            <!-- Product 4 -->
+            <div class="product">
+                <img src="https://propakistani.pk/price/wp-content/uploads/2021/04/oneplus-n100-price.png" alt="OnePlus N100">
+                <h3>OnePlus N100</h3>
+                <p>$60.00</p>
+                <button onclick="addToCart('OnePlus N100', 60)">Add to Cart</button>
+            </div>
+            <!-- Product 5 -->
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgWKwMsUJYiVqZjeMrVRoFR9hiVxVFATNMtg&s" alt="Galaxy A11">
+                <h3>Galaxy A11</h3>
+                <p>$45.00</p>
+                <button onclick="addToCart('Galaxy A11', 45)">Add to Cart</button>
+            </div>
+        </div>
+        <h2>Shopping Cart</h2>
+        <ul id="cart" class="cart-list"></ul>
+        <h3>Total: $<span id="total">0</span></h3>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
