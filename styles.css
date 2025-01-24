@@ -1,95 +1,137 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff; /* Softer blue tone */
+  color: #333;
+  line-height: 1.6; /* Better readability */
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px;
-    text-align: center;
+  background: linear-gradient(45deg, #1d3557, #457b9d); /* More vivid gradient */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
+.store-title {
+  font-size: 2rem; /* Slightly larger for impact */
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+.filter-btn {
+  background: white;
+  color: #1d3557;
+  border: 2px solid #1d3557;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.filter-btn:hover {
+  background: #1d3557;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cart-icon {
+  position: relative;
+  font-size: 1.8rem; /* Bigger for emphasis */
+  cursor: pointer;
+}
+
+.cart-icon #cart-count {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background: crimson; /* More vibrant color */
+  color: white;
+  border-radius: 50%;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Slightly larger cards */
+  gap: 1.5rem; /* More space between items */
+  padding: 2rem; /* Spacious padding */
 }
 
 .product {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 200px;
+  background: white;
+  border: 2px solid #e6e6e6;
+  border-radius: 15px; /* Softer edges */
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-8px); /* More pronounced hover effect */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .product img {
-    width: 100%;
-    height: auto;
-    max-width: 200px;
-    border-radius: 5px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
 }
 
-.product h3 {
-    margin: 10px 0;
+button.add-to-cart {
+  background: #457b9d;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.6rem 1.4rem;
+  margin-top: 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s;
+button.add-to-cart:hover {
+  background: #1d3557;
+  transform: scale(1.05); /* Slight pop effect */
 }
 
-button:hover {
-    background-color: #45a049;
-    transform: scale(1.1);
+.cart {
+  background: #f9fafb; /* Softer neutral color */
+  padding: 1.5rem;
+  border-top: 3px solid #1d3557;
 }
 
-.cart-list {
-    list-style: none;
-    padding: 0;
-    max-width: 500px;
-    margin: auto;
-    animation: fadeIn 0.5s ease;
+.cart h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1d3557;
 }
 
-.cart-list li {
-    margin: 5px 0;
-    padding: 5px;
-    border: 1px solid #ddd;
-    background-color: white;
-    border-radius: 5px;
-    position: relative;
-    animation: slideIn 0.4s ease;
+.cart-total {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #1d3557;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 2rem;
 }
