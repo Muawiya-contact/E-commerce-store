@@ -120,17 +120,13 @@ nav {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.product:hover {
-    transform: translateY(-8px) rotate(5deg); /* Add rotation */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
 .product img {
     width: 100%;
     height: auto;
     border-radius: 12px;
     margin-bottom: 1rem;
+    transform: translateY(-8px) rotate(5deg); /* Add rotation */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Add to Cart Button */
